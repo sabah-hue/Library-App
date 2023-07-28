@@ -1,0 +1,431 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Library",
+    "dateExported": "2023-03-11T20:50:41.722Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "07023d28-2bf9-48d6-8e43-58113f064968",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "sign up",
+            "url": "http://localhost:5000/user/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-03T17:08:26.557Z",
+            "modified": "2023-03-03T17:51:50.620Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\":\"sabah\",\n    \"email\":\"sabah.abdelbaset@gmail.com\",\n    \"phone\":\"01147814828\",\n    \"age\":88,\n    \"password\":\"1234\",\n    \"cpass\":\"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "65ffffb4-7518-4398-969a-652b17f384a1",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "verifyEmail",
+            "url": "http://localhost:5000/user/verifyEmail",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-03T18:00:14.552Z",
+            "modified": "2023-03-03T22:57:40.647Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"code\":93681,\n  \"email\":\"sabah.abdelbaset@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2eabb3d4-d0e5-4df0-9b25-ec3b10ff72a1",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "sign in",
+            "url": "http://localhost:5000/user/signin",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-03T19:10:13.851Z",
+            "modified": "2023-03-04T13:10:04.745Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sabah.abdelbaset@gmail.com\",\n    \"password\":\"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6ef51c93-253b-4925-9f4b-050e4a68d562",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "forgetpassword",
+            "url": "http://localhost:5000/user/forgetpassword",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-03T19:37:21.578Z",
+            "modified": "2023-03-03T21:02:18.304Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sabah.abdelbaset@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d8d47b1b-6b9b-4c67-835b-95cde3989c52",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "soft delete",
+            "url": "http://localhost:5000/user/softdelete",
+            "method": "PATCH",
+            "sortNum": 45000,
+            "created": "2023-03-03T22:16:45.133Z",
+            "modified": "2023-03-04T01:05:04.902Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDI3YWMxZTdhZjQzYTUxZTA2MTUwMyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc4ODQ0MDN9.R2RDYQOUQsipeqT07JkfZRWbeSF-IjiHBcK0AK9J8Xk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a648a1b9-0319-4d7b-94e4-154f88fb7221",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "checkCodeNewPassword",
+            "url": "http://localhost:5000/user/checkCodeNewPassword",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-03-03T20:54:41.388Z",
+            "modified": "2023-03-03T23:01:20.343Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sabah.abdelbaset@gmail.com\",\n  \"newpassword\":\"9876\",\n  \"code\":52835\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5db20703-8678-483e-a13b-bb0a0723045d",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "update user",
+            "url": "http://localhost:5000/user/update",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-03-03T21:52:09.574Z",
+            "modified": "2023-03-03T23:02:18.102Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDI3YWMxZTdhZjQzYTUxZTA2MTUwMyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc4ODQ0MDN9.R2RDYQOUQsipeqT07JkfZRWbeSF-IjiHBcK0AK9J8Xk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\":\"sabahmodify\",\n    \"phone\":\"011478188877\",\n    \"age\":22\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "841264d1-9c49-44c5-abb3-b5d3efbf2a27",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "delete user",
+            "url": "http://localhost:5000/user/delete",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-03-03T22:00:37.017Z",
+            "modified": "2023-03-03T23:04:45.921Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDI3YWMxZTdhZjQzYTUxZTA2MTUwMyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWhtb2RpZnkiLCJpYXQiOjE2Nzc4ODQ2NTd9.oeaPkQ4iHe2121CEeZf_KmfDgfzzoHsOE3kXbBbWulM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5e3260d8-3d6d-4e1c-ae66-476efcf992a1",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "logout",
+            "url": "http://localhost:5000/user/logout",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-03-03T22:24:55.444Z",
+            "modified": "2023-03-03T23:03:16.038Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDI3YWMxZTdhZjQzYTUxZTA2MTUwMyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc4ODQ0MDN9.R2RDYQOUQsipeqT07JkfZRWbeSF-IjiHBcK0AK9J8Xk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "40cd61e1-76f2-4168-b162-06d83882899b",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "logout Copy",
+            "url": "http://localhost:5000/user/logout",
+            "method": "POST",
+            "sortNum": 95000,
+            "created": "2023-03-04T12:51:54.524Z",
+            "modified": "2023-03-04T12:51:54.524Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDI3YWMxZTdhZjQzYTUxZTA2MTUwMyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc4ODQ0MDN9.R2RDYQOUQsipeqT07JkfZRWbeSF-IjiHBcK0AK9J8Xk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5f6c100a-9a6e-4a1e-93e2-6279abc2c03e",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "insert book",
+            "url": "http://localhost:5000/book/addbook",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-03-03T23:46:16.288Z",
+            "modified": "2023-03-04T13:26:53.565Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"book4\",\n  \"description\":\"math ....\",\n  \"writer\":\"ahmed\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b4f798f9-5ee6-4a3b-b75b-e37be7608b81",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "get all books",
+            "url": "http://localhost:5000/book/getallBooks",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-03-03T23:49:57.264Z",
+            "modified": "2023-03-04T13:29:08.500Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDM0MzA0NWY3ZTAxZDU1OWMxMDMxNyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc5MzU0MDR9.3PlzK9VzNEiyVpJjeFAEhr_0JpXbmCpkK8xIDHYgVcE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2adbfa8f-903d-4b88-9cc9-d66173c590ee",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "borrow Book",
+            "url": "http://localhost:5000/book/borrowBook/64034708d658ef0f6bdb5a21",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-03-04T00:30:16.595Z",
+            "modified": "2023-03-04T13:30:46.872Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDM0MzA0NWY3ZTAxZDU1OWMxMDMxNyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc5MzU0MDR9.3PlzK9VzNEiyVpJjeFAEhr_0JpXbmCpkK8xIDHYgVcE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6917ca2d-a5f7-4384-ba95-e8ce71323480",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "getIssuedBooks",
+            "url": "http://localhost:5000/book/getIssuedBooks/640343045f7e01d559c10317",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-03-04T01:05:31.998Z",
+            "modified": "2023-03-04T13:32:50.260Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDM0MzA0NWY3ZTAxZDU1OWMxMDMxNyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc5MzU0MDR9.3PlzK9VzNEiyVpJjeFAEhr_0JpXbmCpkK8xIDHYgVcE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "539d24f9-894b-4319-97ba-3bc2df8c53b8",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "issuedBooks/searchByName",
+            "url": "http://localhost:5000/book/issuedBooks/searchByName",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-03-04T01:23:24.726Z",
+            "modified": "2023-03-04T13:34:15.859Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDM0MzA0NWY3ZTAxZDU1OWMxMDMxNyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc5MzU0MDR9.3PlzK9VzNEiyVpJjeFAEhr_0JpXbmCpkK8xIDHYgVcE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"book2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "89d87096-2c44-4f11-809f-bc78a78b87aa",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "returnBooks/searchByName",
+            "url": "http://localhost:5000/book/returnBooks/searchByName",
+            "method": "GET",
+            "sortNum": 145000,
+            "created": "2023-03-04T12:40:12.557Z",
+            "modified": "2023-03-04T13:34:58.073Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDM0MzA0NWY3ZTAxZDU1OWMxMDMxNyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc5MzU0MDR9.3PlzK9VzNEiyVpJjeFAEhr_0JpXbmCpkK8xIDHYgVcE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"book\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "42ce4ff9-bb2a-4577-a71c-3b6079b64267",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "getNotReturnedBooks",
+            "url": "http://localhost:5000/book/getNotReturnedBooks/640343045f7e01d559c10317",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-03-04T01:46:03.907Z",
+            "modified": "2023-03-04T13:35:25.666Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDM0MzA0NWY3ZTAxZDU1OWMxMDMxNyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc5MzU0MDR9.3PlzK9VzNEiyVpJjeFAEhr_0JpXbmCpkK8xIDHYgVcE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "34aaccf2-d30c-4c0c-82b4-7152926d3c17",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "changePassword",
+            "url": "http://localhost:5000/user/changePass",
+            "method": "PATCH",
+            "sortNum": 150000,
+            "created": "2023-03-04T12:53:17.041Z",
+            "modified": "2023-03-04T13:17:29.177Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDM0MzA0NWY3ZTAxZDU1OWMxMDMxNyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzc5MzU0MDR9.3PlzK9VzNEiyVpJjeFAEhr_0JpXbmCpkK8xIDHYgVcE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sabah.abdelbaset@gmail.com\",\n    \"password\":\"1234\",\n    \"newpassword\":\"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "763fff20-d469-402f-9620-81a5d803d2b4",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "uploadImage",
+            "url": "http://localhost:5000/user/profilePic",
+            "method": "PATCH",
+            "sortNum": 160000,
+            "created": "2023-03-11T15:11:37.238Z",
+            "modified": "2023-03-11T19:47:44.627Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDM0MzA0NWY3ZTAxZDU1OWMxMDMxNyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzg1NDk5NjN9.9cf8sDM34luBhqiepDf4gxkHi8SuK5ssO683BtxuNDA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "userprofileImage",
+                        "value": "e:\\Root\\Node\\LIBRARY-TASK\\images\\p02.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "85eb820c-8347-471d-80f2-7a748210b651",
+            "colId": "7aab721f-608a-4aa6-ac01-aa466ab7c3ff",
+            "containerId": "",
+            "name": "book image",
+            "url": "http://localhost:5000/book/bookPic/640346fcd658ef0f6bdb5a1e",
+            "method": "PATCH",
+            "sortNum": 170000,
+            "created": "2023-03-11T17:55:05.244Z",
+            "modified": "2023-03-11T18:01:13.728Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDM0MzA0NWY3ZTAxZDU1OWMxMDMxNyIsImVtYWlsIjoic2FiYWguYWJkZWxiYXNldEBnbWFpbC5jb20iLCJuYW1lIjoic2FiYWgiLCJpYXQiOjE2Nzg1NDk5NjN9.9cf8sDM34luBhqiepDf4gxkHi8SuK5ssO683BtxuNDA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "bookImage",
+                        "value": "e:\\Root\\Node\\LIBRARY-TASK\\images\\p02.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
